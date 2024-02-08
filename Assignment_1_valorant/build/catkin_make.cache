@@ -1,0 +1,2 @@
+valorant_simulation_khajababa
+-DCATKIN_DEVEL_PREFIX=/Users/khajababa/Documents/Work/ROS/Assignment_1_valorant/devel -DCMAKE_INSTALL_PREFIX=/Users/khajababa/Documents/Work/ROS/Assignment_1_valorant/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/Users/khajababa/Documents/Work/ROS/Assignment_1_valorant/install
+
+Name: valorant_simulation_khajababa
+Description: Description of valorant_simulation_khajababa
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
