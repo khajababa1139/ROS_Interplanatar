@@ -1,0 +1,2 @@
+commandControl
+-DCATKIN_DEVEL_PREFIX=/Users/khajababa/Documents/Work/ROS/test/command_control_ws/devel -DCMAKE_INSTALL_PREFIX=/Users/khajababa/Documents/Work/ROS/test/command_control_ws/install -G Unix Makefiles
