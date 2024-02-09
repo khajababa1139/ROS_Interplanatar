@@ -1,0 +1,2 @@
+Autonomous_khaja
+-DCATKIN_DEVEL_PREFIX=/Users/khajababa/Documents/Work/ROS/Recruitment_Assignment_1/devel -DCMAKE_INSTALL_PREFIX=/Users/khajababa/Documents/Work/ROS/Recruitment_Assignment_1/install -G Unix Makefiles

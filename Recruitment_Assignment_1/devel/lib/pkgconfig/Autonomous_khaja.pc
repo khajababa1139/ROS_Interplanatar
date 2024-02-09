@@ -1,0 +1,8 @@
+prefix=/Users/khajababa/Documents/Work/ROS/Recruitment_Assignment_1/devel
+
+Name: Autonomous_khaja
+Description: Description of Autonomous_khaja
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
