@@ -46,10 +46,10 @@ CATKIN_SYMLINK_INSTALL:BOOL=OFF
 CATKIN_WHITELIST_PACKAGES:STRING=
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
+CMAKE_ADDR2LINE:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/llvm-addr2line
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ar
+CMAKE_AR:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/arm64-apple-darwin20.0.0-ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -59,10 +59,19 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/arm64-apple-darwin20.0.0-clang++
+
+//LLVM archiver
+CMAKE_CXX_COMPILER_AR:FILEPATH=CMAKE_CXX_COMPILER_AR-NOTFOUND
+
+//`clang-scan-deps` dependency scanner
+CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS:FILEPATH=CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND
+
+//Generate index for LLVM archive
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=CMAKE_CXX_COMPILER_RANLIB-NOTFOUND
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=
+CMAKE_CXX_FLAGS:STRING=-ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/khajababa/miniconda3/envs/ROS/include
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -77,10 +86,19 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/arm64-apple-darwin20.0.0-clang
+
+//LLVM archiver
+CMAKE_C_COMPILER_AR:FILEPATH=CMAKE_C_COMPILER_AR-NOTFOUND
+
+//`clang-scan-deps` dependency scanner
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=CMAKE_C_COMPILER_CLANG_SCAN_DEPS-NOTFOUND
+
+//Generate index for LLVM archive
+CMAKE_C_COMPILER_RANLIB:FILEPATH=CMAKE_C_COMPILER_RANLIB-NOTFOUND
 
 //Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=
+CMAKE_C_FLAGS:STRING=-ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/khajababa/miniconda3/envs/ROS/include
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
@@ -95,10 +113,10 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
+CMAKE_DLLTOOL:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/llvm-dlltool
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=
+CMAKE_EXE_LINKER_FLAGS:STRING=-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/khajababa/miniconda3/envs/ROS/lib -L/Users/khajababa/miniconda3/envs/ROS/lib
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
@@ -125,14 +143,14 @@ CMAKE_INSTALL_NAME_TOOL:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/instal
 CMAKE_INSTALL_PREFIX:PATH=/Users/khajababa/Documents/Work/ROS/Recruitment_Assignment_1/install
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ld
+CMAKE_LINKER:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/arm64-apple-darwin20.0.0-ld
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/make
 
 //Flags used by the linker during the creation of modules during
 // all build types.
-CMAKE_MODULE_LINKER_FLAGS:STRING=
+CMAKE_MODULE_LINKER_FLAGS:STRING=-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/khajababa/miniconda3/envs/ROS/lib -L/Users/khajababa/miniconda3/envs/ROS/lib
 
 //Flags used by the linker during the creation of modules during
 // DEBUG builds.
@@ -151,13 +169,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/nm
+CMAKE_NM:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/llvm-nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=CMAKE_OBJCOPY-NOTFOUND
+CMAKE_OBJCOPY:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/llvm-objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/objdump
+CMAKE_OBJDUMP:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/llvm-objdump
 
 //Build architectures for OSX
 CMAKE_OSX_ARCHITECTURES:STRING=
@@ -168,7 +186,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
-CMAKE_OSX_SYSROOT:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+CMAKE_OSX_SYSROOT:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -180,14 +198,14 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
+CMAKE_RANLIB:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/llvm-ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
+CMAKE_READELF:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/llvm-readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=
+CMAKE_SHARED_LINKER_FLAGS:STRING=-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/khajababa/miniconda3/envs/ROS/lib -L/Users/khajababa/miniconda3/envs/ROS/lib
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.
@@ -233,7 +251,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
+CMAKE_STRIP:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/bin/llvm-strip
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -295,6 +313,9 @@ _gtest_INCLUDES:FILEPATH=_gtest_INCLUDES-NOTFOUND
 //Path to a file.
 _gtest_SOURCES:FILEPATH=_gtest_SOURCES-NOTFOUND
 
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/actionlib/cmake
+
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/actionlib_msgs/cmake
 
@@ -326,7 +347,13 @@ genpy_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/genpy/cmake
 geometry_msgs_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/geometry_msgs/cmake
 
 //Path to a library.
-lib:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/lib/libxmlrpcpp.dylib
+lib:FILEPATH=/Users/khajababa/miniconda3/envs/ROS/lib/libtf2.dylib
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/message_runtime/cmake
@@ -346,6 +373,9 @@ roscpp_serialization_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/roscpp_
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph.
+rosgraph_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/rosgraph/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/rosgraph_msgs/cmake
 
@@ -355,8 +385,26 @@ rospy_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/rospy/cmake
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/rostime/cmake
 
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/sensor_msgs/cmake
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/std_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_py.
+tf2_py_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/tf2_py/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for tf.
+tf_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/tf/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/Users/khajababa/miniconda3/envs/ROS/share/xmlrpcpp/cmake
@@ -391,6 +439,12 @@ CMAKE_CPACK_COMMAND:INTERNAL=/Users/khajababa/miniconda3/envs/ROS/bin/cpack
 CMAKE_CTEST_COMMAND:INTERNAL=/Users/khajababa/miniconda3/envs/ROS/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
+CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS
+CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
+CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -403,6 +457,12 @@ CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_AR
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_CLANG_SCAN_DEPS
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG

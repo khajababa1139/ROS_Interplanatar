@@ -18,7 +18,6 @@ def solution(array, start, goal):
         visited.add(current)
         row, col = current
 
-       
         moves = [(row - 1, col), (row + 1, col), (row, col - 1), (row, col + 1)]
 
         for move in moves:

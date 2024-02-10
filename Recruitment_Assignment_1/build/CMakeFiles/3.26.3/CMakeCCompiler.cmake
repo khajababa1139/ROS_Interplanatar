@@ -1,7 +1,7 @@
-set(CMAKE_C_COMPILER "/Library/Developer/CommandLineTools/usr/bin/cc")
+set(CMAKE_C_COMPILER "/Users/khajababa/miniconda3/envs/ROS/bin/arm64-apple-darwin20.0.0-clang")
 set(CMAKE_C_COMPILER_ARG1 "")
-set(CMAKE_C_COMPILER_ID "AppleClang")
-set(CMAKE_C_COMPILER_VERSION "14.0.3.14030022")
+set(CMAKE_C_COMPILER_ID "Clang")
+set(CMAKE_C_COMPILER_VERSION "14.0.6")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
@@ -21,11 +21,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/Library/Developer/CommandLineTools/usr/bin/ar")
-set(CMAKE_C_COMPILER_AR "")
-set(CMAKE_RANLIB "/Library/Developer/CommandLineTools/usr/bin/ranlib")
-set(CMAKE_C_COMPILER_RANLIB "")
-set(CMAKE_LINKER "/Library/Developer/CommandLineTools/usr/bin/ld")
+set(CMAKE_AR "/Users/khajababa/miniconda3/envs/ROS/bin/arm64-apple-darwin20.0.0-ar")
+set(CMAKE_C_COMPILER_AR "CMAKE_C_COMPILER_AR-NOTFOUND")
+set(CMAKE_RANLIB "/Users/khajababa/miniconda3/envs/ROS/bin/llvm-ranlib")
+set(CMAKE_C_COMPILER_RANLIB "CMAKE_C_COMPILER_RANLIB-NOTFOUND")
+set(CMAKE_LINKER "/Users/khajababa/miniconda3/envs/ROS/bin/arm64-apple-darwin20.0.0-ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC )
 set(CMAKE_C_COMPILER_LOADED 1)
@@ -66,7 +66,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include;/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/Users/khajababa/miniconda3/envs/ROS/include;/Users/khajababa/miniconda3/envs/ROS/lib/clang/14.0.6/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib")
-set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/Users/khajababa/miniconda3/envs/ROS/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib")
+set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks")

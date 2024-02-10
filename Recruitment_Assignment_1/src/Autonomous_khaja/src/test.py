@@ -5,8 +5,8 @@ from nav_msgs.msg import Odometry
 from coordinates import coordinates
 
 
-coords = coordinates
-OFFSET = 0.3
+coords = sorted(coordinates)
+OFFSET = 0.2 # decreased offset
 
 REACHED = []
 

@@ -270,7 +270,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/Users/khajababa/catkin_ws/devel;/Users/khajababa/miniconda3/envs/ROS'.split(';')
+            CMAKE_PREFIX_PATH = r'/Users/khajababa/miniconda3/envs/ROS'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []
