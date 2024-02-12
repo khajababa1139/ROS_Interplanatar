@@ -1,0 +1,8 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/Users/khajababa/miniconda3/envs/ROS/lib/python3.9/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/Users/khajababa/miniconda3/envs/ROS/lib/python3.9/site-packages"
+    ]
+}

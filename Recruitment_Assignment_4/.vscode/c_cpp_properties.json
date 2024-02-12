@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/Users/khajababa/miniconda3/envs/ROS/include/**",
+        "/Users/khajababa/Documents/Work/ROS/Recruitment_Assignment_4/src/six_dof_spatial_manipulator/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

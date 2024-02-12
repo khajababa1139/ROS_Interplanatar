@@ -1,0 +1,2 @@
+six_dof_spatial_manipulator
+-DCATKIN_DEVEL_PREFIX=/Users/khajababa/Documents/Work/ROS/Recruitment_Assignment_4/devel -DCMAKE_INSTALL_PREFIX=/Users/khajababa/Documents/Work/ROS/Recruitment_Assignment_4/install -G Unix Makefiles
